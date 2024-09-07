@@ -1,9 +1,21 @@
 import {Text, View, StyleSheet, Pressable, TextInput, ImageBackground, Alert, Image, Button} from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
 import {faChevronRight, faChevronLeft} from "@fortawesome/free-solid-svg-icons";
-import React, {useRef, useState} from "react";
+import React, {useEffect, useRef, useState} from "react";
+import * as ScreenOrientation from "expo-screen-orientation";
 
-export default function KarakterScreen() {
+useEffect(() => {
+    // Lock to landscape mode
+    ScreenOrientation.lockAsync(ScreenOrientation.OrientationLock.PORTRAIT);
+
+    // Unlock orientation when leaving the screen
+    return () => {
+        ScreenOrientation.unlockAsync();
+    };
+}, []);
+
+
+export default function CharacterScreen({navigation}:any) {
     const image = [
         require('../assets/images/sylus1.jpg'),
         require('../assets/images/sylus2.jpg'),
@@ -55,7 +67,7 @@ export default function KarakterScreen() {
                 <View style={styles.container}>
                     <Text style={styles.fighterName}> {fighterName[currentImage]} </Text>
                     <View>
-                        <Pressable  onPress={alertMessage} style={styles.button}>
+                        <Pressable  onPress={() =>  navigation.navigate('Arena')} style={styles.button}>
                             <Text style={styles.text}> Select </Text>
                         </Pressable>
                     </View>

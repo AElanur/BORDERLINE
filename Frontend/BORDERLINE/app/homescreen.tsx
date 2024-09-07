@@ -1,11 +1,22 @@
 import { Text, View, StyleSheet, Pressable, ImageBackground } from 'react-native';
-import React from 'react';
+import React, {useEffect} from 'react';
+import * as ScreenOrientation from "expo-screen-orientation";
+
+useEffect(() => {
+    // Lock to landscape mode
+    ScreenOrientation.lockAsync(ScreenOrientation.OrientationLock.PORTRAIT);
+
+    // Unlock orientation when leaving the screen
+    return () => {
+        ScreenOrientation.unlockAsync();
+    };
+}, []);
 
 export default function HomeScreen({navigation}:any) {
     return (
         <ImageBackground source={require('../assets/images/bg.jpg')} resizeMode={"cover"}>
         <View style={styles.container}>
-                <Pressable onPress={() =>  navigation.navigate('Karakter')}>
+                <Pressable onPress={() =>  navigation.navigate('Character')}>
                     <Text style={styles.button}>Start game</Text>
                 </Pressable>
         </View>
@@ -13,7 +24,7 @@ export default function HomeScreen({navigation}:any) {
     );
 };
 
- HomeScreen;
+HomeScreen;
 
 const styles = StyleSheet.create({
     container: {

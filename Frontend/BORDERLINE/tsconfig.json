@@ -4,8 +4,9 @@
     "strict": true,
     "paths": {
       "@/*": [
-        "./*"
-      ]
+        "./*",
+        "src/*"
+      ],
     }
   },
   "include": [
