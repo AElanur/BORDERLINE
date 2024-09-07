@@ -1,40 +1,17 @@
-import { Alert, Text, View, StyleSheet, Button, Pressable, ImageBackground } from 'react-native';
+import * as React from 'react';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import HomeScreen from "@/app/homescreen";
+import KarakterScreen from "@/app/karakterScreen";
 
-export default function HomeScreen() {
-    function showAlert(){
-        Alert.alert("Rik is geweldig!")
-    }
-    const image = require('../assets/images/bg.jpg');
-    return (
-        <ImageBackground source={image} resizeMode={"cover"}>
-        <View style={styles.container}>
-                <Pressable onPress={() => showAlert()}>
-                    <Text style={styles.button}>Start game</Text>
-                </Pressable>
+const Stack = createNativeStackNavigator();
 
-        </View>
-        </ImageBackground>
+const App = () => {
+    return(
+            <Stack.Navigator initialRouteName="Home">
+                <Stack.Screen name="Home" component={HomeScreen} />
+                <Stack.Screen name="Karakter" component={KarakterScreen} />
+            </Stack.Navigator>
     );
 }
 
-const styles = StyleSheet.create({
-    container: {
-        height: '100%',
-        marginTop: 50,
-        marginLeft: 20,
-        justifyContent: "center"
-    },
-    button: {
-        width: '80%',
-        borderRadius: 50,
-        height: 40,
-        textAlign: "center",
-        margin: 'auto',
-        color: "#FDB0C0",
-        fontWeight: "bold",
-        backgroundColor: "transparent",
-        borderColor: "#FDB0C0",
-        borderStyle: "solid",
-        borderWidth: 2
-    }
-})
+export default App;
