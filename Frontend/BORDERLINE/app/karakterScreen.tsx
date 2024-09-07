@@ -1,33 +1,70 @@
 import {Text, View, StyleSheet, Pressable, TextInput, ImageBackground, Alert, Image, Button} from 'react-native';
+import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
+import {faChevronRight, faChevronLeft} from "@fortawesome/free-solid-svg-icons";
+import React, {useRef, useState} from "react";
 
 export default function KarakterScreen() {
-    const image = require('../assets/images/karakterscreen.jpg');
+    const image = [
+        require('../assets/images/sylus1.jpg'),
+        require('../assets/images/sylus2.jpg'),
+        require('../assets/images/sylus3.jpg')];
+    const [currentImage, setCurrentImage] = useState(0);
+
+    const fighterName = [
+        "Sylus 1",
+        "Sylus 2",
+        "Sylus 3"
+    ]
+
+    function alertMessage() {
+        Alert.alert("In the making")
+    }
+
+    function switchCharacter(direction: number) {
+        let newIndex = currentImage + direction;
+
+        // Handle wrapping around the array
+        if (newIndex < 0) {
+            newIndex = image.length - 1; // Go to the last image if we're at the first one
+        } else if (newIndex >= image.length) {
+            newIndex = 0; // Go back to the first image if we're at the last one
+        }
+        setCurrentImage(newIndex);
+    }
+
     return (
         <View style={styles.screen}>
-        <ImageBackground style={styles.wallpaper} source={image} resizeMode={"cover"}>
+        {/*<ImageBackground style={styles.wallpaper} source={image} resizeMode={"cover"}>*/}
 
             <View style={styles.characterScreen}>
-                <View style={styles.character}>
-                    <Image style={styles.characterImage} source={require('../assets/images/sylus3.jpg')} resizeMode={"cover"}/>
+                <Text style={styles.fighterName}>
+                    Select a fighter!
+                </Text>
+                <View style={styles.fighter}>
+                    <Pressable onPress={() => switchCharacter(-1)}>
+                        <FontAwesomeIcon style={styles.character} icon={faChevronLeft} size={20}/>
+                    </Pressable>
+                    <View style={styles.character}>
+                        <Image style={styles.characterImage} source={image[currentImage]} resizeMode={"cover"}/>
+                    </View>
+                    <Pressable onPress={() => switchCharacter(1)}>
+                        <FontAwesomeIcon style={styles.character} icon={faChevronRight} size={20}/>
+                    </Pressable>
                 </View>
 
                 <View style={styles.container}>
-                    <View style={styles.fighter}>
-                        <Text style={styles.fighterName}> (-- </Text>
-                        <Text style={styles.fighterName}>Sylus</Text>
-                        <Text style={styles.fighterName}> --) </Text>
-                    </View>
+                    <Text style={styles.fighterName}> {fighterName[currentImage]} </Text>
                     <View>
-                        <TextInput style={styles.input}/>
-                        <Button title="Select"/>
+                        <Pressable  onPress={alertMessage} style={styles.button}>
+                            <Text style={styles.text}> Select </Text>
+                        </Pressable>
                     </View>
                 </View>
             </View>
-        </ImageBackground>
+        {/*</ImageBackground>*/}
         </View>
     );
 }
-
 const styles = StyleSheet.create({
     screen: {
         justifyContent: "center",
@@ -39,7 +76,7 @@ const styles = StyleSheet.create({
         height: undefined
     },
     container: {
-        justifyContent: "center"
+        justifyContent: "center",
     },
     fighter: {
         flexDirection: "row",
@@ -67,7 +104,7 @@ const styles = StyleSheet.create({
     fighterName: {
       fontSize: 20,
       fontWeight: "bold",
-        textAlign: "center"
+        textAlign: "center",
     },
     input: {
         width: '100%',
@@ -81,5 +118,25 @@ const styles = StyleSheet.create({
         borderColor: "#00000",
         borderStyle: "solid",
         borderWidth: 2
+    },
+    button: {
+        marginTop: 10,
+        width: '80%',
+        borderRadius: 10,
+        height: 40,
+        textAlign: "center",
+        margin: 'auto',
+        color: "#FDB0C0",
+        fontWeight: "bold",
+        backgroundColor: "transparent",
+        borderColor: "#000000",
+        borderStyle: "solid",
+        borderWidth: 2
+    },
+    text: {
+        fontSize: 20,
+        fontWeight: "bold",
+        textAlign: "center",
+        color: "#000000"
     }
 })
