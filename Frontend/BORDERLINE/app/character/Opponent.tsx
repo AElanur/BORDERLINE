@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
         height: 250,
         width: 100,
         backgroundColor: "#FFFFF",
-        marginTop: "auto",
+        marginTop: 150,
         marginLeft: "auto",
         zIndex: 1,
     },

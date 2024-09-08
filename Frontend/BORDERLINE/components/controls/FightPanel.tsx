@@ -8,16 +8,14 @@ import Move from '@/components/buttons/MoveButton'
 const fightPanel = () => {
     return(
         <View style={styles.controlPanel}>
-            <View style={styles.combatPanel}>
-                <View style={styles.leftSide}>
-                    <View style={styles.button}><Kick/></View>
-                    <View style={styles.button}><Punch/></View>
-                </View>
+            <View style={styles.movePanel}>
+                <View style={styles.button}><Defend/></View>
+                <View style={styles.button}><Kick/></View>
+                <View style={styles.button}><Punch/></View>
+            </View>
 
-                <View style={styles.rightSide}>
-                    <View style={styles.button}><Defend/></View>
-                    <View style={styles.button}><Move/></View>
-                </View>
+            <View style={styles.combatPanel}>
+                <View style={styles.button}><Move/></View>
             </View>
         </View>
     )
@@ -28,22 +26,16 @@ export default fightPanel
 const styles = StyleSheet.create({
     controlPanel: {
         height: 200,
-        marginTop: "auto",
-        backgroundColor: "transparent",
-        flexDirection: "row"
+        flexDirection: "row",
+        justifyContent: "space-between"
     },
     combatPanel: {
         flexDirection: "row",
         marginLeft: "auto",
-        margin: 10
+        margin: 5
     },
-    leftSide: {
-        flexDirection: "column",
-        justifyContent: "center"
-    },
-    rightSide: {
-        flexDirection: "column",
-        justifyContent: "center"
+    movePanel: {
+        flexDirection: "row"
     },
     button: {
         margin: 5,

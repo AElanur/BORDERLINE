@@ -8,8 +8,6 @@ const character = () => {
                 <Image style={styles.fighterImage} source={require('../../assets/images/sylus4.png')}  resizeMode={"cover"}></Image>
             </View>
         </View>
-
-
     )
 }
 
@@ -22,8 +20,8 @@ const styles = StyleSheet.create({
         backgroundColor: 'transparent',
         marginTop: "auto",
         marginRight: "auto",
-        zIndex: 1,
-        marginBottom: -100,
+        zIndex: 3,
+        marginBottom: -150,
         position: 'relative'
     },
     fighterImage: {
