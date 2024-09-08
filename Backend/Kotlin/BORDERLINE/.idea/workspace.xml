@@ -41,7 +41,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "android.gradle.sync.needed": "true",
+    "git-widget-placeholder": "Kotlin-Backend",
     "kotlin-language-version-configured": "true",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
@@ -64,7 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1725798978318</updated>
       <workItem from="1725798979282" duration="24000" />
-      <workItem from="1725799011708" duration="46000" />
+      <workItem from="1725799011708" duration="49000" />
     </task>
     <servers />
   </component>
