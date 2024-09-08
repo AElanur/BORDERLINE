@@ -17,9 +17,9 @@ useEffect(() => {
 
 export default function CharacterScreen({navigation}:any) {
     const image = [
-        require('../assets/images/sylus1.jpg'),
-        require('../assets/images/sylus2.jpg'),
-        require('../assets/images/sylus3.jpg')];
+        require('@/assets/images/sylus1.jpg'),
+        require('@/assets/images/sylus2.jpg'),
+        require('@/assets/images/sylus3.jpg')];
     const [currentImage, setCurrentImage] = useState(0);
 
     const fighterName = [

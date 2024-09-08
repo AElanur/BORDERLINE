@@ -4,6 +4,7 @@ import * as ScreenOrientation from 'expo-screen-orientation';
 import Panel from '@/components/controls/FightPanel'
 import Fighter from '@/app/character/Character'
 import Opponent from '@/app/character/Opponent'
+import Health from '@/app/character/stats/Healthbar'
 
 export default function ArenaScreen() {
     useEffect(() => {
@@ -18,12 +19,9 @@ export default function ArenaScreen() {
 
     return(
         <View style={styles.field}>
-            <View style={styles.fighterStats}>
-                <Text>100/100</Text>
-                <View style={styles.healthbar}/>
-            </View>
+            <Health/>
             <View style={styles.sky}>
-                <ImageBackground source={require('../assets/images/background.jpg')}>
+                <ImageBackground source={require('@/assets/images/background.jpg')}>
                 <View style={styles.arena}>
                     <Fighter/>
                     <Opponent/>
@@ -31,7 +29,7 @@ export default function ArenaScreen() {
                 </ImageBackground>
             </View>
             <View style={styles.grass}>
-                <ImageBackground source={require('../assets/images/grass.jpg')}>
+                <ImageBackground source={require('@/assets/images/grass.jpg')}>
                 <Panel/>
                 </ImageBackground>
             </View>
@@ -69,18 +67,5 @@ const styles = StyleSheet.create({
     text: {
         fontSize: 30,
         margin: 15
-    },
-    healthbar: {
-        width: 250,
-        height: 10,
-        backgroundColor: "#DC143C",
-        color: "#00000",
-        zIndex: 10
-    },
-    fighterStats: {
-        flexDirection: "column",
-        width: 100,
-        margin: 15,
-        backgroundColor: "transparent"
     }
 })
