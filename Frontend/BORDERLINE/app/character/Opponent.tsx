@@ -20,8 +20,8 @@ const styles = StyleSheet.create({
         height: 250,
         width: 100,
         backgroundColor: "#FFFFF",
-        marginTop: 150,
         marginLeft: "auto",
+        bottom: 150,
         zIndex: 1,
     },
     fighterImage: {

@@ -27,7 +27,11 @@ const styles = StyleSheet.create({
     controlPanel: {
         height: 200,
         flexDirection: "row",
-        justifyContent: "space-between"
+        justifyContent: "space-between",
+        position: "relative",
+        marginBottom: "auto",
+        width: "100%",
+        bottom: 30
     },
     combatPanel: {
         flexDirection: "row",

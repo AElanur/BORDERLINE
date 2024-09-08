@@ -4,7 +4,7 @@ import * as ScreenOrientation from 'expo-screen-orientation';
 import Panel from '@/components/controls/FightPanel'
 import Fighter from '@/app/character/Character'
 import Opponent from '@/app/character/Opponent'
-import Health from '@/app/character/stats/Healthbar'
+import Status from '@/components/Bars/ingame/Statusbar'
 
 export default function ArenaScreen() {
     useEffect(() => {
@@ -19,18 +19,18 @@ export default function ArenaScreen() {
 
     return(
         <View style={styles.field}>
-            <Health/>
+            <Status/>
             <View style={styles.sky}>
                 <ImageBackground source={require('@/assets/images/background.jpg')}>
-                <View style={styles.arena}>
-                    <Fighter/>
-                    <Opponent/>
-                </View>
                 </ImageBackground>
             </View>
             <View style={styles.grass}>
                 <ImageBackground source={require('@/assets/images/grass.jpg')}>
-                <Panel/>
+                    <View style={styles.arena}>
+                        <Fighter/>
+                        <Opponent/>
+                    </View>
+                    <Panel/>
                 </ImageBackground>
             </View>
         </View>
@@ -46,8 +46,8 @@ const styles = StyleSheet.create({
     },
     sky: {
         flex: 3,
-        marginTop: -200,
-        zIndex: -1
+        height: "100%",
+        width: "100%"
     },
     grass: {
         flex: 1,

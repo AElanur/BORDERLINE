@@ -3,13 +3,12 @@ import { Text, View, StyleSheet, Pressable, Image } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
 import {faGear} from "@fortawesome/free-solid-svg-icons";
 
-const hit = 5
-function punch(damage: number) {
+function settings() {
     console.log("Player has entered settings")
 }
 
 const settingsButton = () => { return(
-    <Pressable style={styles.button} onPress={ () => punch(hit)}>
+    <Pressable style={styles.button} onPress={ () => settings()}>
         <View style={styles.icon}>
             <FontAwesomeIcon icon={faGear} />
         </View>
@@ -19,10 +18,10 @@ const settingsButton = () => { return(
 const styles = StyleSheet.create({
     button: {
         borderRadius: 50,
-        width: 55,
-        height: 55,
+        width: 30,
+        height: 30,
         borderWidth: 2,
-        borderColor: "#FFFFF",
+        borderColor: "#FFFFF"
     },
     icon: {
         width: undefined,
