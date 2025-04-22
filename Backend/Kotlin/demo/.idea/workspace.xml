@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3bd7bbd1-ea7c-4f38-b965-a79ec2094514" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../BORDERLINE/.idea/discord.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BORDERLINE/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BORDERLINE/.idea/material_theme_project_new.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BORDERLINE/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BORDERLINE/src/main/kotlin/characterDataClass/Character.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BORDERLINE/src/main/kotlin/characterDataClass/Hitlist.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BORDERLINE/src/main/resources/character.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spotitube/src/main/kotlin/asd/technischleerdoel/spotitube/ExceptionHandler/ApiError.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spotitube/src/main/kotlin/asd/technischleerdoel/spotitube/ExceptionHandler/GlobalExceptionHandler.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spotitube/src/main/kotlin/asd/technischleerdoel/spotitube/config/CorsConfig.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spotitube/src/main/kotlin/asd/technischleerdoel/spotitube/controllers/Login.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spotitube/src/main/kotlin/asd/technischleerdoel/spotitube/controllers/Playlists.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spotitube/src/main/kotlin/asd/technischleerdoel/spotitube/models/Playlist.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spotitube/src/main/kotlin/asd/technischleerdoel/spotitube/models/Token.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spotitube/src/main/kotlin/asd/technischleerdoel/spotitube/models/Track.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spotitube/src/main/kotlin/asd/technischleerdoel/spotitube/models/User.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spotitube/src/main/kotlin/asd/technischleerdoel/spotitube/services/LoginService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spotitube/src/main/kotlin/asd/technischleerdoel/spotitube/services/PlaylistService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spotitube/src/main/kotlin/asd/technischleerdoel/spotitube/testData/TestData.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Frontend/BORDERLINE/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Frontend/BORDERLINE/.idea/BORDERLINE.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Frontend/BORDERLINE/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Frontend/BORDERLINE/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Frontend/BORDERLINE/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BORDERLINE/.gradle/8.8/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../BORDERLINE/.gradle/8.8/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BORDERLINE/.gradle/8.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../BORDERLINE/.gradle/8.8/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BORDERLINE/.gradle/8.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../BORDERLINE/.gradle/8.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BORDERLINE/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../BORDERLINE/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BORDERLINE/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../BORDERLINE/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BORDERLINE/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BORDERLINE/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BORDERLINE/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BORDERLINE/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BORDERLINE/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BORDERLINE/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BORDERLINE/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BORDERLINE/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Frontend/BORDERLINE/assets/images/sylus4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Frontend/BORDERLINE/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Frontend/BORDERLINE/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Frontend/BORDERLINE/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Frontend/BORDERLINE/package.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "AElanur"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/AElanur/BORDERLINE.git",
+    "accountId": "75135fa1-f44d-428c-b3b0-cceeda8252e4"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2sWp50pTdpyrgB0p2wumwYEzSBu" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "android.gradle.sync.needed": "true",
+    "git-widget-placeholder": "Kotlin-Backend",
+    "kotlin-language-version-configured": "true",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3bd7bbd1-ea7c-4f38-b965-a79ec2094514" name="Changes" comment="" />
+      <created>1738581000506</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1738581000506</updated>
+      <workItem from="1738581001606" duration="213000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

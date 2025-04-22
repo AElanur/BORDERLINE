@@ -1,0 +1,16 @@
+{
+  "character": [{
+      "id" : 1,
+      "name" : "Rickie Dagon"
+    }
+  ],
+  "hitlist" : [{
+    "id" : 1,
+    "type" : "direct",
+    "punch_name" : "Dagon punch",
+    "punch_hitpoints" : 10,
+    "kick_name" : "Dagon kick",
+    "kick_hitpoints" : 15,
+    "character_id" : 1
+  }]
+}
